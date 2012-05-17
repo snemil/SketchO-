@@ -24,20 +24,10 @@ $(document).ready(function(){
         socket.emit('client_connected', {id: 0, color: player.color, size: player.size});
       });
 
-
-    /*
-
-	HALLÅ FIXA ELLER
-	       =)
-
-    */
 	socket.on('new_client', function(send_clients){
-		//alert($('listelem').length);
-		//alert($('li').length);
-		if ($('li').length =! 0) {
+		if ($('li').length != 0) {
 			$('#clients').append('<li class="listelem">' + send_clients[send_clients.length -1].id + '</li>');
-		}
-		else {
+		}else {
 			for (var i = 0; i<send_clients.length; i++) {
 				$('#clients').append('<li class="listelem">' + send_clients[i].id + '</li>');
 			}
@@ -89,17 +79,13 @@ $(document).ready(function(){
 	}
 
 	function draw(x, y, oldX, oldY, color, size) {
-	      // if (type === "dragstart") {
 	      	ctx.strokeStyle = color;
 	      	ctx.lineWidth = size;
 	        ctx.beginPath();
 	        ctx.moveTo(oldX, oldY);
-	      // } else if (type === "drag") {
 	        ctx.lineTo(x, y);
 	        ctx.stroke();
-	      // } else {
 	        ctx.closePath();
-	      // }
 	} 
 	
 	$('#can').on('drag dragstart dragend', function(e){
