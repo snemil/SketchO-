@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    font: bold 25px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup{
+    display:block;
+}
+body{
+    text-align:center;
+}
+
+#big_wrapper{
+    border: 1px solid grey;
+    width: 1000px;
+    margin: auto;
+
+}
+#top_header{
+    background: skyblue;
+    text-shadow: rgb(110,110,110) 4px 4px 5px;
+    border: 1px solid grey;
+    padding: 10px;
+    text-align:center;
+}
+canvas{
+    cursor: crosshair;
+    //margin: 10px;
+    border: 1px grey solid;
+    background-color:white;
+    position: relative;
+
+ }
+
+ #worker{
+    border: 1px solid pink;
+    //margin: 10px;
+    width: 100px;
+    height: 40px;
+    float: right;
+ }
+
+#clients{
+    list-style-type: none;
+    border: 1px solid black;
+    //float: right;
+    text-align: left;
+    width: 200px;
+}
+
+ #footer{
+    clear:both;
+    text-align:center;
+    //padding:20px;
+    border-top: 2px solid grey;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sketch online alpha</title>
+	<link rel="stylesheet" href="style/main.css">
+	<script src="scripts/jquery.js"> </script>
+	<script src="scripts/jquery.event.drag-2.0.js"></script>
+	<script src="http://192.168.1.136:8080/socket.io/socket.io.js"></script>
+	<script src="client.js"> </script>
+</head>
+<body id="big_wrapper">
+
+	<header id="top_header">
+		<h1>SketchOnline alpha</h1>
+	</header>
+	<section id="control_panel">
+		<div border="1">
+			Pen color:
+			<br>
+			<form>
+				<input name="color_button" id="button_black" type="radio" checked>Black</button>
+				<input name="color_button" id="button_blue" type="radio">Blue</button>
+				<input name="color_button" id="button_red" type="radio">Red</button>
+				<input name="color_button" id="button_yellow" type="radio">Yellow</button>
+				<input name="color_button" id="button_green" type="radio">Green</button>
+				<input name="color_button" id="button_white" type="radio">White</button>
+			</form>
+		</div>
+		<div>
+			Pen size:
+			<br>
+			<input name="size_button" id="button_size1" type="radio">1</button>
+			<input name="size_button" id="button_size2" type="radio">2</button>
+			<input name="size_button" id="button_size3" type="radio" checked>3</button>
+			<input name="size_button" id="button_size4" type="radio">4</button>
+		</div>
+		<div>
+			<button id="button_reset" type="button">Reset workspace</button>
+		</div>
+	</section>
+
+	<section id="main_section">
+		<canvas id="can" width="800" height="600">
+		</canvas>
+		<div id="worker">hallå</div>
+		<ul id="clients"></ul>
+	</section>
+
+	<footer id="footer">
+		Copyright 123456
+	</footer>
+</body>
+
+</html>
